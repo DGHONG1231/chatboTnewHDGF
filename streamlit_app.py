@@ -17,7 +17,7 @@ openai_api_key = st.text_input("OpenAI API Key", type="password", value=default_
 # --- 초기화 버튼(상단 영역) ---
 col1, col2 = st.columns([0.8, 0.2])
 with col2:
-    if st.button("🧹 Reset chat", use_container_width=True):
+    if st.button("🧹 리셋버튼입니당 ", use_container_width=True):
         st.session_state["messages"] = []
         st.rerun()
 
