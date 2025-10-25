@@ -1,8 +1,8 @@
 import streamlit as st
 from openai import OpenAI
 
-st.set_page_config(page_title="💬대균의 챗봇", page_icon="🤖")
-st.title("💬 대균의 챗봇 ")
+st.set_page_config(page_title="💬챗봇", page_icon="🤖")
+st.title("💬 챗봇 ")
 st.write(
     "This is a simple chatbot that uses OpenAI's GPT model to generate responses. "
     "To use this app, provide your OpenAI API key. "
@@ -17,7 +17,7 @@ openai_api_key = st.text_input("OpenAI API Key", type="password", value=default_
 # --- 초기화 버튼(상단 영역) ---
 col1, col2 = st.columns([0.8, 0.2])
 with col2:
-    if st.button("🧹 리셋버튼입니당 ", use_container_width=True):
+    if st.button("🧹 리셋버튼 ", use_container_width=True):
         st.session_state["messages"] = []
         st.rerun()
 
