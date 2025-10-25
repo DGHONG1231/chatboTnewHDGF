@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 st.set_page_config(page_title="💬대균의 챗봇", page_icon="🤖")
-st.title("💬 Chatbot")
+st.title("💬 대균의 챗봇 ")
 st.write(
     "This is a simple chatbot that uses OpenAI's GPT model to generate responses. "
     "To use this app, provide your OpenAI API key. "
